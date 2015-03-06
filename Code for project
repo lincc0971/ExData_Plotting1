@@ -1,5 +1,8 @@
 #code for plot1.R
 ###########################################################################################################
+#dowload file from https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
+#set work direction to the file by setwd()
+
 t1 <- read.table("household_power_consumption.txt", header = TRUE,sep= ";", nrows=24*60*60) #set max. number of row to load for reducing time  
 t2 <- t1[which(t1[,1]=="1/2/2007"),] #day 1 data
 t3 <- t1[which(t1[,1]=="2/2/2007"),] #day 2 data
